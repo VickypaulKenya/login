@@ -1,0 +1,227 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+  display: flex;
+  position:relative;
+  width:100%;
+  height: 100%;
+  background-image: url(ai-generated-8702284_1280.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+}
+body::-webkit-scrollbar{
+    width:0;
+}
+
+body::after{
+    content: "";
+    background:rgba(0,0,0,.3);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color:white;
+    padding:4px;
+    box-shadow: 0 0 10px white;
+    margin: 10px;
+    border-radius: 20px;
+    align-items: center;
+}
+header h1{
+    color:orange;
+    padding:7px;
+    font-weight: 600;
+    font-size: large;
+    border-radius: 20px;
+}
+header h1:hover{
+    background:black;
+    box-shadow: 0  0 10px white;
+}
+header  nav{
+    display: flex;
+    align-items: right;
+    justify-content:right;
+    box-shadow: 0 0 10px rgba(240, 234, 234, 0.3);
+    padding:5px;
+    border-radius: 20px;
+}
+header nav ul{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    list-style: none;
+    gap:20px;
+    color:white;
+    font-size:larger;
+}
+header nav ul li{
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    border-radius: 20px;
+    padding:7px;
+    cursor: pointer;
+}
+header nav ul li:hover{
+    background:blanchedalmond;
+    color:#000;
+}
+
+main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:10px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.formSelect{
+    display:flex;
+    justify-content: space-around;
+    box-shadow: 0 0 10px white;
+    padding:10px;
+    margin:10px;
+    align-items: center;
+    gap:170px;
+    color:white;
+    font-weight: bolder;
+    border-radius: 20px;
+    position: relative;
+}
+.formSelect .signUpForm,.signInForm{
+   padding:5px;
+
+   border-radius: 20px;
+}
+.after{
+  content: "";
+  width:70px;
+  height: 25px;
+  position: absolute;
+  bottom: 12px;
+  left:10px;
+  transition: all .8s;
+  border: none;
+  border-left: 2px solid green;
+    border-right: 2px solid green;
+    border-bottom: 2px solid green;
+    z-index: -1;
+    background: #000;
+    border-radius: 20px;
+}
+
+.formSelect div:hover{
+    background:red;
+    cursor: pointer;
+    
+}
+main .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    padding:10px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+main .container .firstForm{
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    padding:10px;
+    margin:10px;
+    border-radius: 20px;
+    transition: all .8s;
+    width: 300px;
+}
+.input-group{
+    padding:10px;
+}
+.input-group div{
+    display: flex;
+    flex-direction: column;
+    gap:2px;
+    width: 100%;
+    padding:5px;
+    color:white;
+}
+.input-group div label{
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,.3);
+    padding:5px;
+}
+.input-group div input{
+    width:100%;
+    padding:5px;
+    background:transparent;
+    margin: 3px;
+    border: none;
+    border-bottom: 1px solid white;
+    border-radius: 20px;
+    outline: none;
+
+}
+.input-group div input::placeholder{
+    text-align: center;
+    color:green;
+}
+.input-group .submit input{
+    border: none;
+    padding:0px;
+}
+.input-group div input:focus{
+    border-radius: 20px;
+    padding: 5px;
+    outline: none;
+    border: 1px solid white;
+    color:white;
+}
+.input-group div:nth-last-child(2){
+    padding:5px;
+    color:white;
+    width: 100%;
+    background:blue;
+    border-radius: 20px;
+    margin-top: 6px;
+}
+.input-group .submit:hover{
+    background:rgb(125, 125, 233);
+}
+
+.form2{
+    transform: translate(350px);
+}
+.form1{
+     transform: translate(150px);
+}
+.add1{
+    transform:translate(-330px);
+}
+.add2{
+    transform: translate(-140px);
+}
+.firstForm H2{
+    color:orange;
+    text-align: center;
+    font-size: 12px;
+}
+.input-group div:last-child p{
+    padding:10px;
+    cursor: pointer;
+}
+.input-group div:last-child p span{
+    padding:5px;
+    font-size: .6rem;
+}
+.input-group div:last-child p span:hover{
+     text-decoration: underline;
+     color:blue;
+}
